@@ -30,7 +30,6 @@ class SampleViewModelTests: XCTestCase {
         
         viewModel.$validationResult
             .sink(receiveValue: { result in
-                Swift.print("🐷", result)
                 actualResult = result
                 expectation.fulfill()
             })
@@ -38,7 +37,6 @@ class SampleViewModelTests: XCTestCase {
         
         viewModel.$loadLabelColor
             .sink(receiveValue: { color in
-                Swift.print("🐔", color)
                 actualColor = color
                 expectation.fulfill()
             })
@@ -58,7 +56,6 @@ class SampleViewModelTests: XCTestCase {
         
         viewModel.$validationResult
             .sink(receiveValue: { result in
-                Swift.print("🐷", result)
                 actualResult = result
                 expectation.fulfill()
             })
@@ -66,7 +63,6 @@ class SampleViewModelTests: XCTestCase {
         
         viewModel.$loadLabelColor
             .sink(receiveValue: { color in
-                Swift.print("🐔", color)
                 actualColor = color
                 expectation.fulfill()
             })
@@ -89,7 +85,6 @@ class SampleViewModelTests: XCTestCase {
         
         viewModel.$validationResult
             .sink(receiveValue: { result in
-                Swift.print("🐷", result)
                 actualResult = result
                 expectation.fulfill()
             })
@@ -97,7 +92,6 @@ class SampleViewModelTests: XCTestCase {
         
         viewModel.$loadLabelColor
             .sink(receiveValue: { color in
-                Swift.print("🐔", color)
                 actualColor = color
                 expectation.fulfill()
             })
